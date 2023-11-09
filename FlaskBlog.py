@@ -22,5 +22,12 @@ def home():
 def about():
     return render_template('about.html',title = "aboutPage")
 
+@app.route("/register")
+def register():
+    return render_template('register.html',title = "Register Page")
+
+@app.route("/login")
+def login():
+    return render_template('login.html',title = "Login Page")
 if __name__== '__main__':
     app.run(debug = True)
